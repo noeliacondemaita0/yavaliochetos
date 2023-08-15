@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Condemaita", sans-serif;
+    font-size: 14px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 90%;
+  }
+  
+  .header-img img {
+    border-radius: 12px;
+    display: block;
+    height: 101px;
+    margin: 0 auto;
+    width: 101px;
+  }
+  
+  .header-info {
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    text-align: center;
+  }
+  
+  .header-info h2 {
+    color: #4e5150;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+  
+  .header-info p {
+    color: #a9a9a9;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  
+  .header-description {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .header-description .card {
+    background-color: #e5e5e5;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 52px;
+    justify-content: center;
+    text-align: center;
+    width: 78px;
+  }
+  
+  .header-description .card h3 {
+    color: #4e5150;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.63px;
+  }
+  
+  .header-description .card p {
+    color: #bdbdbd;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+  }
+  
+  .gallery {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 95%;
+  }
+  
+  .gallery-container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 109px 109px 109px;
+    grid-template-rows: 109px 109px 109px;
+    grid-template-areas:
+      "image-1 image-2 image-2"
+      "image-3 image-3 image-4"
+      "image-5 image-6 image-4";
+    justify-content: center;
+  }
+  
+  .gallery-container img {
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .gallery-img-1 {
+    grid-area: image-1;
+  }
+  
+  .gallery-img-2 {
+    grid-area: image-2;
+  }
+  
+  .gallery-img-3 {
+    grid-area: image-3;
+  }
+  
+  .gallery-img-4 {
+    grid-area: image-4;
+  }
+  
+  .gallery-img-5 {
+    grid-area: image-6;
+  }
+  
+  .gallery-img-6 {
+    grid-area: image-5;
+  }
+  
+  .footer {
+    margin: 44px 0 24px 0;
+    text-align: center;
+  }
+  
+  .footer-description {
+    color: #b9bdcf;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  
+  .footer-description a {
+    color: #b9bdcf;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 768px) {
+    .header {
+      margin-top: 60px;
+    }
+  
+    .header-img img {
+      border-radius: 16px;
+      height: 156px;
+      margin: 0 auto;
+      width: 156px;
+    }
+  
+    .header-info h2 {
+      font-size: 24px;
+      line-height: 29.26px;
+    }
+  
+    .header-info p {
+      font-size: 14px;
+      line-height: 17.07px;
+    }
+  
+    .header-description {
+      gap: 24px;
+    }
+  
+    .header-description .card {
+      height: 67px;
+      width: 100px;
+    }
+  
+    .header-description .card h3 {
+      font-size: 18px;
+      line-height: 21.94px;
+    }
+  
+    .header-description .card p {
+      font-size: 14px;
+      line-height: 17.07px;
+    }
+  
+    .gallery {
+      margin-top: 64px;
+      max-width: 80%;
+    }
+  
+    .gallery-container {
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 299px));
+      grid-template-rows: repeat(auto-fit, minmax(200px, 299px));
+    }
+  }
+  
